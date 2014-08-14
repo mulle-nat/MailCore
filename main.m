@@ -161,7 +161,7 @@ int main( int argc, char *argv[ ] )
     CTMIME_MessagePart *messagePart = [CTMIME_MessagePart mimeMessagePartWithContent:multi];
     [msgOne setSubject:@"MIME Test"];
     msgOne.mime = messagePart;
-    [CTSMTPConnection sendMessage:msgOne server:@"mail.theronge.com" username:@"mronge" password:@"" port:25 useTLS:YES useAuth:YES];
+    [CTSMTPConnection sendMessage:msgOne server:@"mail.theronge.com" username:@"mronge" password:@"" port:25 connectionType:CTSMTPConnectionTypePlain useAuth:YES];
     [msgOne release];
 
     //[CTSMTPConnection sendMessage:msgOne server:@"mail.dls.net" username:@"" password:@"" port:25 useTLS:NO shouldAuth:NO];
