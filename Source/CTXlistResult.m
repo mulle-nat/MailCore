@@ -31,12 +31,11 @@
 
 #import "CTXlistResult.h"
 
-@implementation CTXlistResult
-{
-    NSMutableArray *_flags;
-}
 
-@synthesize name, flags = _flags;
+@implementation CTXlistResult
+
+@synthesize name  = _name;
+@synthesize flags = _flags;
 
 - (id)init
 {
@@ -56,7 +55,7 @@
 
 - (void)addFlag:(NSString *)flag
 {
-    [_flags addObject:flag];
+    [(id) _flags addObject:flag];
 }
 
 @end
