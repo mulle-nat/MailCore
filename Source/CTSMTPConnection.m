@@ -113,7 +113,7 @@
     [smtpObj release];
     return YES;
 error:
-    *error = smtpObj.lastError;
+    *error = [[smtpObj.lastError retain] autorelease];
     [smtpObj release];
     mailsmtp_free(smtp);
     return NO;
@@ -163,7 +163,7 @@ error:
   [smtpObj release];
   return YES;
 error:
-  *error = smtpObj.lastError;
+  *error = [[smtpObj.lastError retain] autorelease];
   [smtpObj release];
   mailsmtp_free(smtp);
   return NO;

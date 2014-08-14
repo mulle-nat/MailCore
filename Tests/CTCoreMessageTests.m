@@ -99,7 +99,7 @@
 }
 
 - (void)testRender {
-	CTCoreMessage *msg = [[CTCoreMessage alloc] init];
+	CTCoreMessage *msg = [[[CTCoreMessage alloc] init] autorelease];
 	[msg setBody:@"test"];
 	NSString *str = [msg render];
 	/* Do a few sanity checks on the str */
@@ -113,7 +113,7 @@
 }
 
 - (void)testRenderWithToField {
-	CTCoreMessage *msg = [[CTCoreMessage alloc] init];
+	CTCoreMessage *msg = [[[CTCoreMessage alloc] init] autorelease];
 	[msg setBody:@"This is some kind of message."];
 	[msg setTo:[NSArray arrayWithObjects:[CTCoreAddress addressWithName:@"Matt" email:@"test@test.com"],nil]];
 	NSString *str = [msg render];
