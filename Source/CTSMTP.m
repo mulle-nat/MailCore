@@ -99,6 +99,35 @@
 }
 
 
+- (BOOL)validateRecipients:(id)recipients {
+    NSEnumerator *objEnum = [recipients objectEnumerator];
+    CTCoreAddress *rcpt;
+    while ((rcpt = [objEnum nextObject])) {
+        BOOL success = [self validateRecipientAddress:[rcpt email]];
+        if (!success) {
+            return NO;
+        }
+    }
+    return YES;
+}
+
+- (BOOL) validateRecipientAddress:(NSString *)recAddress
+{
+    int ret = mailsmtp_rcpt([self resource], [recAddress cStringUsingEncoding:NSUTF8StringEncoding]);
+    if( ret == MAILSMTP_ERROR_STREAM)
+    {
+        self.lastError = MailCoreCreateErrorFromSMTPCode( ret);
+        return NO;
+    }
+    
+    if( ret == MAIL_NO_ERROR && mySMTP->response_code == 250)
+      return( YES);
+   
+    self.lastError = MailCoreCreateErrorFromSMTPCode( mySMTP->response_code);
+    return NO;
+}
+
+
 - (BOOL)setRecipients:(id)recipients {
     NSEnumerator *objEnum = [recipients objectEnumerator];
     CTCoreAddress *rcpt;
@@ -111,10 +140,11 @@
     return YES;
 }
 
-
-- (BOOL)setRecipientAddress:(NSString *)recAddress {
+- (BOOL)setRecipientAddress:(NSString *)recAddress
+{
     int ret = mailsmtp_rcpt([self resource], [recAddress cStringUsingEncoding:NSUTF8StringEncoding]);
-    if (ret != MAIL_NO_ERROR) {
+    if (ret != MAIL_NO_ERROR || mySMTP->response_code == 251)
+    {
         self.lastError = MailCoreCreateErrorFromSMTPCode(ret);
         return NO;
     }
