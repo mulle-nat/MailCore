@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 42;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,8 @@
 		2D538B45119803A6000AB4A2 /* CTSMTPAsyncConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D538B42119803A6000AB4A2 /* CTSMTPAsyncConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D538B46119803A6000AB4A2 /* CTSMTPAsyncConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D538B43119803A6000AB4A2 /* CTSMTPAsyncConnection.m */; };
 		2D538B48119803E2000AB4A2 /* CTSMTPAsyncConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D538B43119803A6000AB4A2 /* CTSMTPAsyncConnection.m */; };
-		41BC4A4B19A1FEBD007B0AC9 /* libetpan.framework in Copy libetpan Subframework */ = {isa = PBXBuildFile; fileRef = F890D39610CEECD50039817C /* libetpan.framework */; };
+		41656BAA19A25F2600D502D7 /* libetpan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41656BA919A25F2600D502D7 /* libetpan.framework */; };
+		41656C5B19A260D700D502D7 /* libetpan.framework in Copy libetpan Subframework */ = {isa = PBXBuildFile; fileRef = 41656BA919A25F2600D502D7 /* libetpan.framework */; };
 		41BC4A4C19A1FFAC007B0AC9 /* libetpan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F890D39610CEECD50039817C /* libetpan.framework */; };
 		41DE281E1998B13400400B15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DE281D1998B13400400B15 /* Foundation.framework */; };
 		41DE28211998B1C000400B15 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DE28201998B1C000400B15 /* libz.dylib */; };
@@ -181,7 +182,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				41BC4A4B19A1FEBD007B0AC9 /* libetpan.framework in Copy libetpan Subframework */,
+				41656C5B19A260D700D502D7 /* libetpan.framework in Copy libetpan Subframework */,
 			);
 			name = "Copy libetpan Subframework";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,12 +192,13 @@
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		0F134A861656D718000D1E83 /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = types.plist; path = Resources/types.plist; sourceTree = "<group>"; };
+		0F134A861656D718000D1E83 /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = types.plist; path = Resources/types.plist; sourceTree = "<group>"; };
 		0F369D01162DF5030043A3ED /* CTXlistResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTXlistResult.h; path = Source/CTXlistResult.h; sourceTree = "<group>"; };
 		0F369D02162DF5030043A3ED /* CTXlistResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTXlistResult.m; path = Source/CTXlistResult.m; sourceTree = "<group>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		2D538B42119803A6000AB4A2 /* CTSMTPAsyncConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTSMTPAsyncConnection.h; path = Source/CTSMTPAsyncConnection.h; sourceTree = SOURCE_ROOT; };
 		2D538B43119803A6000AB4A2 /* CTSMTPAsyncConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTSMTPAsyncConnection.m; path = Source/CTSMTPAsyncConnection.m; sourceTree = SOURCE_ROOT; };
+		41656BA919A25F2600D502D7 /* libetpan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libetpan.framework; path = "libetpan/build-mac/build/$(CONFIGURATION)/libetpan.framework"; sourceTree = "<group>"; };
 		417D75A7199D573700BC04D1 /* maildriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = maildriver.h; path = libetpan/src/driver/interface/maildriver.h; sourceTree = "<group>"; };
 		41951B3519990D3B000165B7 /* libetpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libetpan.h; path = libetpan/src/main/libetpan.h; sourceTree = "<group>"; };
 		41DE281D1998B13400400B15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -225,13 +227,13 @@
 		F81B88530A74AA7100143DF6 /* CTCoreAddress.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = CTCoreAddress.m; path = Source/CTCoreAddress.m; sourceTree = SOURCE_ROOT; };
 		F81B88540A74AA7100143DF6 /* CTCoreFolder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CTCoreFolder.h; path = Source/CTCoreFolder.h; sourceTree = SOURCE_ROOT; };
 		F81B88550A74AA7100143DF6 /* CTCoreFolder.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = CTCoreFolder.m; path = Source/CTCoreFolder.m; sourceTree = SOURCE_ROOT; };
-		F81B88560A74AA7100143DF6 /* CTCoreMessage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CTCoreMessage.h; path = Source/CTCoreMessage.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F81B88560A74AA7100143DF6 /* CTCoreMessage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CTCoreMessage.h; path = Source/CTCoreMessage.h; sourceTree = SOURCE_ROOT; };
 		F81B88570A74AA7100143DF6 /* CTCoreMessage.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = CTCoreMessage.m; path = Source/CTCoreMessage.m; sourceTree = SOURCE_ROOT; };
 		F81B885A0A74AA7100143DF6 /* CTSMTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CTSMTPConnection.h; path = Source/CTSMTPConnection.h; sourceTree = "<group>"; };
 		F81B885B0A74AA7100143DF6 /* CTSMTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = CTSMTPConnection.m; path = Source/CTSMTPConnection.m; sourceTree = "<group>"; };
 		F81B885C0A74AA7100143DF6 /* MailCore.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MailCore.h; path = Source/MailCore.h; sourceTree = SOURCE_ROOT; };
 		F81B885D0A74AA7100143DF6 /* MailCoreTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MailCoreTypes.h; path = Source/MailCoreTypes.h; sourceTree = SOURCE_ROOT; };
-		F81B88700A74AAD800143DF6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		F81B88700A74AAD800143DF6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		F81B88710A74AAD800143DF6 /* MailCore_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MailCore_Prefix.pch; sourceTree = "<group>"; };
 		F81E26680C6ED35C00B3FBAC /* CTBareAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTBareAttachment.h; path = Source/CTBareAttachment.h; sourceTree = "<group>"; };
 		F81E26690C6ED35C00B3FBAC /* CTBareAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTBareAttachment.m; path = Source/CTBareAttachment.m; sourceTree = "<group>"; };
@@ -260,17 +262,16 @@
 		F88CA0D30BF7AC0B0055AC29 /* CTESMTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTESMTP.m; path = Source/CTESMTP.m; sourceTree = "<group>"; };
 		F890D38D10CEECD50039817C /* libetpan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libetpan.xcodeproj; path = "libetpan/build-mac/libetpan.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		F8D31A3109C524EA00468234 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F8DFAB0410541708003D3CC1 /* libetpan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libetpan.framework; path = "OpenSourceProjects/libetpan-0.58/build-mac/build/Release/libetpan.framework"; sourceTree = "<group>"; };
 		F8DFCF4915801A5000C01975 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DFCF4B15801A5000C01975 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F8DFCF4D15801A5000C01975 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F8DFCF4F15801A5000C01975 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F8DFCF5315801A5000C01975 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		F8DFCF5315801A5000C01975 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		F8DFCF5515801A5000C01975 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8DFCF5A15801A5000C01975 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		F8EA76110C1141C1004F85D8 /* CTCoreAddressTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTCoreAddressTests.h; path = Tests/CTCoreAddressTests.h; sourceTree = "<group>"; };
 		F8EA76120C1141C1004F85D8 /* CTCoreAddressTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTCoreAddressTests.m; path = Tests/CTCoreAddressTests.m; sourceTree = "<group>"; };
-		F8EADFAD0B3BB14D000C8371 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		F8EADFAD0B3BB14D000C8371 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		F8EADFB30B3BB178000C8371 /* CTCoreMessageTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTCoreMessageTests.h; path = Tests/CTCoreMessageTests.h; sourceTree = "<group>"; };
 		F8EADFB40B3BB178000C8371 /* CTCoreMessageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTCoreMessageTests.m; path = Tests/CTCoreMessageTests.m; sourceTree = "<group>"; };
 		F8EC5B0114C37F60006AF4D3 /* CTMIME_HtmlPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTMIME_HtmlPart.h; path = Source/CTMIME_HtmlPart.h; sourceTree = "<group>"; };
@@ -297,6 +298,7 @@
 				F8483E4309CE7B9C00B80440 /* libiconv.dylib in Frameworks */,
 				F8483E4C09CE7C2800B80440 /* libcrypto.dylib in Frameworks */,
 				F88804620B42018500D400E7 /* libsasl2.dylib in Frameworks */,
+				41656BAA19A25F2600D502D7 /* libetpan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +404,6 @@
 		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F8DFAB0410541708003D3CC1 /* libetpan.framework */,
 				F88804610B42018500D400E7 /* libsasl2.dylib */,
 				F8483E4B09CE7C2800B80440 /* libcrypto.dylib */,
 				F8483E4209CE7B9C00B80440 /* libiconv.dylib */,
@@ -505,6 +506,7 @@
 		F8DFCF4A15801A5000C01975 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41656BA919A25F2600D502D7 /* libetpan.framework */,
 				41DE28281998B20D00400B15 /* CFNetwork.framework */,
 				41DE28261998B1EC00400B15 /* CoreFoundation.framework */,
 				41DE28241998B1DD00400B15 /* Security.framework */,
@@ -666,7 +668,6 @@
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "MailCore" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
@@ -747,7 +748,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}${WRAPPER_SUFFIX}\"\nln -s -f Versions/${FRAMEWORK_VERSION}/Frameworks\n";
-			showEnvVarsInLog = 0;
 		};
 		F848422D09CFACA000B80440 /* Generate Doxygen Dox */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -762,7 +762,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#sh Scripts/DocScripts/doxygen.sh";
-			showEnvVarsInLog = 0;
 		};
 		F89618D30A7D77CF00F93E26 /* Build OpenSource */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -909,6 +908,11 @@
 				"DSTROOT[sdk=*]" = "/tmp/$(PROJECT_NAME).dst";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/libetpan/build-mac/build/Install Debug\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
@@ -935,6 +939,11 @@
 				DSTROOT = /;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/libetpan/build-mac/build/Install Debug\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/Frameworks;
@@ -954,6 +963,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "libetpan/build/$(CONFIGURATION)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"libetpan/build-mac/include/**",
@@ -961,7 +971,6 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
@@ -971,6 +980,7 @@
 			buildSettings = {
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "libetpan/build/$(CONFIGURATION)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				HEADER_SEARCH_PATHS = (
 					"libetpan/build-mac/include/**",
@@ -978,7 +988,6 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = macosx;
 			};
 			name = Install;
 		};
@@ -987,6 +996,7 @@
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "libetpan/build/$(CONFIGURATION)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"libetpan/build-mac/include/**",
@@ -994,7 +1004,6 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = "Install Debug";
@@ -1009,6 +1018,11 @@
 				DSTROOT = /;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/libetpan/build-mac/build/Install Debug\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/Frameworks;
@@ -1068,8 +1082,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/iOSPorts/ports/security/cyrus-sasl/build/Debug-iphoneos\"",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\\\"$(SRCROOT)/iOSPorts/ports/security/cyrus-sasl/build/Debug-iphoneos\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1153,8 +1168,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/iOSPorts/ports/security/cyrus-sasl/build/Debug-iphoneos\"",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\\\"$(SRCROOT)/iOSPorts/ports/security/cyrus-sasl/build/Debug-iphoneos\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
@@ -1180,8 +1196,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/iOSPorts/ports/security/cyrus-sasl/build/Debug-iphoneos\"",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\\\"$(SRCROOT)/iOSPorts/ports/security/cyrus-sasl/build/Debug-iphoneos\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
