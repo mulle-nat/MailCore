@@ -14,8 +14,9 @@
 		2D538B45119803A6000AB4A2 /* CTSMTPAsyncConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D538B42119803A6000AB4A2 /* CTSMTPAsyncConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D538B46119803A6000AB4A2 /* CTSMTPAsyncConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D538B43119803A6000AB4A2 /* CTSMTPAsyncConnection.m */; };
 		2D538B48119803E2000AB4A2 /* CTSMTPAsyncConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D538B43119803A6000AB4A2 /* CTSMTPAsyncConnection.m */; };
+		41BC4A4B19A1FEBD007B0AC9 /* libetpan.framework in Copy libetpan Subframework */ = {isa = PBXBuildFile; fileRef = F890D39610CEECD50039817C /* libetpan.framework */; };
+		41BC4A4C19A1FFAC007B0AC9 /* libetpan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F890D39610CEECD50039817C /* libetpan.framework */; };
 		41DE281E1998B13400400B15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DE281D1998B13400400B15 /* Foundation.framework */; };
-		41DE281F1998B1B000400B15 /* libetpan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F80A104F17A573A50063BCD2 /* libetpan.a */; };
 		41DE28211998B1C000400B15 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DE28201998B1C000400B15 /* libz.dylib */; };
 		41DE28231998B1CF00400B15 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DE28221998B1CF00400B15 /* SecurityFoundation.framework */; };
 		41DE28251998B1DD00400B15 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DE28241998B1DD00400B15 /* Security.framework */; };
@@ -122,6 +123,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		41BC4A4719A1FE7C007B0AC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F890D38D10CEECD50039817C /* libetpan.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = libetpan;
+		};
 		F80A104E17A573A50063BCD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F890D38D10CEECD50039817C /* libetpan.xcodeproj */;
@@ -150,13 +158,6 @@
 			remoteGlobalIDString = C682E21815B315EF00BE9DA7;
 			remoteInfo = "libetpan ios";
 		};
-		F80A105717A575D80063BCD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F890D38D10CEECD50039817C /* libetpan.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C69AB10910546FE500F32FBD;
-			remoteInfo = "static libetpan";
-		};
 		F88863041581019F0088CF38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -174,13 +175,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		41DE28321998D0AF00400B15 /* CopyFiles */ = {
+		41BC4A4A19A1FEB5007B0AC9 /* Copy libetpan Subframework */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 10;
 			files = (
+				41BC4A4B19A1FEBD007B0AC9 /* libetpan.framework in Copy libetpan Subframework */,
 			);
+			name = "Copy libetpan Subframework";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -194,6 +197,8 @@
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		2D538B42119803A6000AB4A2 /* CTSMTPAsyncConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTSMTPAsyncConnection.h; path = Source/CTSMTPAsyncConnection.h; sourceTree = SOURCE_ROOT; };
 		2D538B43119803A6000AB4A2 /* CTSMTPAsyncConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTSMTPAsyncConnection.m; path = Source/CTSMTPAsyncConnection.m; sourceTree = SOURCE_ROOT; };
+		417D75A7199D573700BC04D1 /* maildriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = maildriver.h; path = libetpan/src/driver/interface/maildriver.h; sourceTree = "<group>"; };
+		41951B3519990D3B000165B7 /* libetpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libetpan.h; path = libetpan/src/main/libetpan.h; sourceTree = "<group>"; };
 		41DE281D1998B13400400B15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41DE28201998B1C000400B15 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		41DE28221998B1CF00400B15 /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = System/Library/Frameworks/SecurityFoundation.framework; sourceTree = SDKROOT; };
@@ -286,8 +291,8 @@
 				41DE28251998B1DD00400B15 /* Security.framework in Frameworks */,
 				41DE28231998B1CF00400B15 /* SecurityFoundation.framework in Frameworks */,
 				41DE281E1998B13400400B15 /* Foundation.framework in Frameworks */,
+				41BC4A4C19A1FFAC007B0AC9 /* libetpan.framework in Frameworks */,
 				41DE28211998B1C000400B15 /* libz.dylib in Frameworks */,
-				41DE281F1998B1B000400B15 /* libetpan.a in Frameworks */,
 				F8483E4109CE7B9000B80440 /* libssl.dylib in Frameworks */,
 				F8483E4309CE7B9C00B80440 /* libiconv.dylib in Frameworks */,
 				F8483E4C09CE7C2800B80440 /* libcrypto.dylib in Frameworks */,
@@ -332,6 +337,8 @@
 		0867D691FE84028FC02AAC07 /* MailCore */ = {
 			isa = PBXGroup;
 			children = (
+				417D75A7199D573700BC04D1 /* maildriver.h */,
+				41951B3519990D3B000165B7 /* libetpan.h */,
 				F890D38D10CEECD50039817C /* libetpan.xcodeproj */,
 				F85A18AF09C7D8F200305C06 /* Tests */,
 				F9FC3A721683FC07004B2D1E /* TestData */,
@@ -591,18 +598,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "MailCore" */;
 			buildPhases = (
-				F89618D30A7D77CF00F93E26 /* ShellScript */,
+				F89618D30A7D77CF00F93E26 /* Build OpenSource */,
 				8DC2EF500486A6940098B216 /* Headers */,
-				8DC2EF520486A6940098B216 /* Resources */,
 				8DC2EF540486A6940098B216 /* Sources */,
-				41DE28321998D0AF00400B15 /* CopyFiles */,
 				8DC2EF560486A6940098B216 /* Frameworks */,
-				F848422D09CFACA000B80440 /* ShellScript */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				F848422D09CFACA000B80440 /* Generate Doxygen Dox */,
+				41BC4A4A19A1FEB5007B0AC9 /* Copy libetpan Subframework */,
+				41BC4A4D19A2004A007B0AC9 /* Create Subframeworks symlink */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F80A105817A575D80063BCD2 /* PBXTargetDependency */,
+				41BC4A4819A1FE7C007B0AC9 /* PBXTargetDependency */,
 			);
 			name = MailCore;
 			productInstallPath = "$(HOME)/Library/Frameworks";
@@ -726,13 +734,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F848422D09CFACA000B80440 /* ShellScript */ = {
+		41BC4A4D19A2004A007B0AC9 /* Create Subframeworks symlink */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Subframeworks symlink";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}${WRAPPER_SUFFIX}\"\nln -s -f Versions/${FRAMEWORK_VERSION}/Frameworks\n";
+			showEnvVarsInLog = 0;
+		};
+		F848422D09CFACA000B80440 /* Generate Doxygen Dox */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Generate Doxygen Dox";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -740,13 +764,14 @@
 			shellScript = "#sh Scripts/DocScripts/doxygen.sh";
 			showEnvVarsInLog = 0;
 		};
-		F89618D30A7D77CF00F93E26 /* ShellScript */ = {
+		F89618D30A7D77CF00F93E26 /* Build OpenSource */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Build OpenSource";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -778,7 +803,6 @@
 				F81B88630A74AA7100143DF6 /* CTCoreFolder.m in Sources */,
 				F81B88650A74AA7100143DF6 /* CTCoreMessage.m in Sources */,
 				F81B88690A74AA7100143DF6 /* CTSMTPConnection.m in Sources */,
-				F88804D80B4243C000D400E7 /* MailCoreUtilities.m in Sources */,
 				F88CA0CF0BF7A7B00055AC29 /* CTSMTP.m in Sources */,
 				F88CA0D50BF7AC0B0055AC29 /* CTESMTP.m in Sources */,
 				F81A8ADD0C03FC3B002F780A /* CTMIME_MessagePart.m in Sources */,
@@ -793,6 +817,7 @@
 				2D538B46119803A6000AB4A2 /* CTSMTPAsyncConnection.m in Sources */,
 				F8EC5B0414C37F60006AF4D3 /* CTMIME_HtmlPart.m in Sources */,
 				0F369D04162DF5030043A3ED /* CTXlistResult.m in Sources */,
+				F88804D80B4243C000D400E7 /* MailCoreUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +865,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		41BC4A4819A1FE7C007B0AC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libetpan;
+			targetProxy = 41BC4A4719A1FE7C007B0AC9 /* PBXContainerItemProxy */;
+		};
 		F80A105417A573AD0063BCD2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "libetpan ios";
@@ -849,11 +879,6 @@
 			isa = PBXTargetDependency;
 			name = "libetpan ios";
 			targetProxy = F80A105517A575D00063BCD2 /* PBXContainerItemProxy */;
-		};
-		F80A105817A575D80063BCD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "static libetpan";
-			targetProxy = F80A105717A575D80063BCD2 /* PBXContainerItemProxy */;
 		};
 		F88863051581019F0088CF38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -881,106 +906,176 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"DSTROOT[sdk=*]" = "/tmp/$(PROJECT_NAME).dst";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
-				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = MailCore_Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libetpan/build-mac/include/**";
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(LIBRARY_SEARCH_PATHS)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
-				);
+				INSTALL_PATH = /Library/Frameworks;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-seg1addr",
 					0xb0000000,
-					"-ObjC",
+					"-sub_umbrella",
+					libetpan,
 				);
 				PRODUCT_NAME = MailCore;
 				WRAPPER_EXTENSION = framework;
-				ZERO_LINK = YES;
 			};
 			name = Debug;
 		};
-		1DEB91AF08733DA50010E9CD /* Release */ = {
+		1DEB91AF08733DA50010E9CD /* Install */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
-				FRAMEWORK_VERSION = A;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = MailCore_Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libetpan/build-mac/include/**";
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(LIBRARY_SEARCH_PATHS)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
-				);
+				INSTALL_PATH = /Library/Frameworks;
 				OTHER_LDFLAGS = (
 					"-seg1addr",
 					0xb0000000,
-					"-ObjC",
+					"-sub_umbrella",
+					libetpan,
 				);
 				PRODUCT_NAME = MailCore;
 				STRIP_INSTALLED_PRODUCT = YES;
 				WRAPPER_EXTENSION = framework;
 			};
-			name = Release;
+			name = Install;
 		};
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "libetpan/build-mac/include/**";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"libetpan/build-mac/include/**",
+					"$(PROJECT_DIR)/libetpan/build-mac/build/$(CONFIGURATION)/include",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
-		1DEB91B308733DA50010E9CD /* Release */ = {
+		1DEB91B308733DA50010E9CD /* Install */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "libetpan/build-mac/include/**";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					"libetpan/build-mac/include/**",
+					"$(PROJECT_DIR)/libetpan/build-mac/build/$(CONFIGURATION)/include",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				SDKROOT = macosx;
 			};
-			name = Release;
+			name = Install;
+		};
+		417B7649199CF17100082DD1 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"libetpan/build-mac/include/**",
+					"$(PROJECT_DIR)/libetpan/build-mac/build/$(CONFIGURATION)/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = "Install Debug";
+		};
+		417B764A199CF17100082DD1 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Library/Frameworks;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0xb0000000,
+					"-sub_umbrella",
+					libetpan,
+				);
+				PRODUCT_NAME = MailCore;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = "Install Debug";
+		};
+		417B764B199CF17100082DD1 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				HEADER_SEARCH_PATHS = "$BUILT_PRODUCTS_DIR/include/libetpan/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mronge/Projects/virtru-ios-mail/MailCore/Prebuilt/libetpan-ios/lib",
+					"/Users/mronge/Projects/virtru-ios-mail/MailCore/Prebuilt/libsasl-ios/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = ../../include/MailCore/Private;
+				PRODUCT_NAME = mailcore;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../include/MailCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				ZERO_LINK = NO;
+			};
+			name = "Install Debug";
+		};
+		417B764C199CF17100082DD1 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOSPorts/ports/security/cyrus-sasl/build/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Install Debug";
 		};
 		F8618B5810DADB5C00C41188 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1007,7 +1102,7 @@
 			};
 			name = Debug;
 		};
-		F8618B5910DADB5C00C41188 /* Release */ = {
+		F8618B5910DADB5C00C41188 /* Install */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1030,7 +1125,7 @@
 				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
-			name = Release;
+			name = Install;
 		};
 		F8DFCF5C15801A5000C01975 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1066,7 +1161,7 @@
 			};
 			name = Debug;
 		};
-		F8DFCF5D15801A5000C01975 /* Release */ = {
+		F8DFCF5D15801A5000C01975 /* Install */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1092,7 +1187,7 @@
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = octest;
 			};
-			name = Release;
+			name = Install;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1101,37 +1196,41 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91AE08733DA50010E9CD /* Debug */,
-				1DEB91AF08733DA50010E9CD /* Release */,
+				1DEB91AF08733DA50010E9CD /* Install */,
+				417B764A199CF17100082DD1 /* Install Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Install Debug";
 		};
 		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "MailCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
-				1DEB91B308733DA50010E9CD /* Release */,
+				1DEB91B308733DA50010E9CD /* Install */,
+				417B7649199CF17100082DD1 /* Install Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Install Debug";
 		};
 		F8618B5B10DADB8300C41188 /* Build configuration list for PBXNativeTarget "MailCore iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8618B5810DADB5C00C41188 /* Debug */,
-				F8618B5910DADB5C00C41188 /* Release */,
+				F8618B5910DADB5C00C41188 /* Install */,
+				417B764B199CF17100082DD1 /* Install Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Install Debug";
 		};
 		F8DFCF5B15801A5000C01975 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8DFCF5C15801A5000C01975 /* Debug */,
-				F8DFCF5D15801A5000C01975 /* Release */,
+				F8DFCF5D15801A5000C01975 /* Install */,
+				417B764C199CF17100082DD1 /* Install Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Install Debug";
 		};
 /* End XCConfigurationList section */
 	};
