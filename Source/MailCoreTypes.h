@@ -29,7 +29,6 @@
  * SUCH DAMAGE.
  */
 
-#import <libetpan/libetpan.h>
 
 #define DEST_CHARSET "UTF-8"
 #define CTContentTypesPath @"/System/Library/Frameworks/Foundation.framework/Resources/types.plist"

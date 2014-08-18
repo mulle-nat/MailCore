@@ -29,6 +29,8 @@
  * SUCH DAMAGE.
  */
 
+#import <libetpan/libetpan.h>
+
 #import "CTMIMEFactory.h"
 
 #import "MailCoreTypes.h"

@@ -30,8 +30,6 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <libetpan/libetpan.h>
-#import "MailCoreTypes.h"
 
 /**
  CTCoreAccount is the base class with which you establish a connection to the
@@ -40,6 +38,8 @@
 */
 
 @class CTCoreFolder;
+struct mailstorage;
+struct mailimap;
 
 @interface CTCoreAccount : NSObject {
     struct mailstorage *myStorage;
@@ -109,6 +109,6 @@
 - (NSSet *)capabilities;
 
 /* Intended for advanced use only */
-- (mailimap *)session;
+- (struct mailimap *)session;
 - (struct mailstorage *)storageStruct;
 @end

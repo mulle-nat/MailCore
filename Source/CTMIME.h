@@ -30,9 +30,10 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <libetpan/libetpan.h>
 
 @class CTMIME_Enumerator;
+struct mailmime;
+struct mailmessage;
 
 @interface CTMIME : NSObject {
     NSString *mContentType;

@@ -31,7 +31,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import <libetpan/libetpan.h>
 #import "MailCoreTypes.h"
 
 @protocol CTSMTPConnectionDelegate
@@ -45,12 +44,12 @@
 @class CTCoreMessage;
 @class CTCoreAddress;
 @class CTSMTP;
-
+struct mailsmtp;
 
 @interface CTSMTPAsyncConnection : NSObject
 {
     CTSMTP* mSMTPObj;
-    mailsmtp* mSMTP;
+    struct mailsmtp* mSMTP;
     CTCoreMessage* mMessage;
     NSDictionary* mServerSettings;
     NSThread* mMailThread;

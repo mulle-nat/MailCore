@@ -30,7 +30,6 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <libetpan/libetpan.h>
 #import "MailCoreTypes.h"
 
 /**
@@ -38,6 +37,9 @@
  class used to get a list of messages from the server. You need to make sure and establish a connection
  first by calling connect.
 */
+struct mailfolder;
+struct folderSession;
+struct mailimap;
 
 @class CTCoreMessage, CTCoreAccount;
 
@@ -316,6 +318,6 @@
 
 /* Intended for advanced use only */
 - (struct mailfolder *)folderStruct;
-- (mailsession *)folderSession;
-- (mailimap *)imapSession;
+- (struct mailsession *)folderSession;
+- (struct mailimap *)imapSession;
 @end

@@ -28,6 +28,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
+#import <libetpan/libetpan.h>
 
 #import "CTCoreAccount.h"
 #import "CTCoreAddress.h"
@@ -37,7 +38,6 @@
 #import "CTBareAttachment.h"
 #import "CTCoreAttachment.h"
 #import "CTXlistResult.h"
-#import <libetpan/libetpan.h>
 #import "MailCoreTypes.h"
 #import "MailCoreUtilities.h"
 #import "CTMIME_HtmlPart.h"

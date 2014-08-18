@@ -30,11 +30,11 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <libetpan/libetpan.h>
 
 #define MailCoreErrorDomain @"mailcore"
 
-/**
+struct clist_s;
+ /**
      Enables logging of all streams, data is output to standard out.
 */
 void MailCoreEnableLogging();
@@ -54,6 +54,6 @@ NSError* MailCoreCreateErrorFromSMTPCode(int errcode);
 
 NSString *MailCoreDecodeMIMEPhrase(char *data);
 
-NSArray * MailCoreStringArrayFromClist(clist *list);
-clist *MailCoreClistFromStringArray(NSArray *strings);
+NSArray * MailCoreStringArrayFromClist(struct clist_s *list);
+struct clist_s *MailCoreClistFromStringArray(NSArray *strings);
 

@@ -31,7 +31,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import <libetpan/libetpan.h>
+struct mailmime;
+struct mailmessage;
 
 @class CTMIME, CTMIME_SinglePart;
 

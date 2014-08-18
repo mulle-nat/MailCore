@@ -30,7 +30,6 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <libetpan/libetpan.h>
 
 /**
  CTCoreMessage is how you work with messages. The easiest way to instantiate a CTCoreMessage
@@ -39,6 +38,10 @@
 
  Anything that begins with "fetch", requires that an active network connection is present.
 */
+struct mailmessage;
+struct mailimap;
+struct mailmime *mime;
+struct mailimf_fields *fields;
 
 @class CTCoreFolder, CTCoreAddress, CTCoreAttachment, CTMIME;
 
@@ -356,7 +359,7 @@ typedef enum {
 
 /* Intended for advanced use only */
 - (struct mailmessage *)messageStruct;
-- (mailimap *)imapSession;
+- (struct mailimap *)imapSession;
 - (void)setBodyStructure:(struct mailmime *)mime;
 - (void)setFields:(struct mailimf_fields *)fields;
 @end

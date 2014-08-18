@@ -30,15 +30,15 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <libetpan/libetpan.h>
 
 /*
  This class is used internally by CTSMTPConnection for SMTP connections, clients
  should not use this directly.
 */
+struct mailsmtp;
 
 @interface CTSMTP : NSObject {
-    mailsmtp *mySMTP; /* This resource is created and freed by CTSMTPConnection */
+    struct mailsmtp *mySMTP; /* This resource is created and freed by CTSMTPConnection */
     NSError *lastError;
 }
 /*
@@ -46,7 +46,7 @@
 */
 @property(nonatomic, retain) NSError *lastError;
 
-- (id)initWithResource:(mailsmtp *)smtp;
+- (id)initWithResource:(struct mailsmtp *)smtp;
 - (BOOL)connectToServer:(NSString *)server port:(unsigned int)port;
 - (BOOL)connectWithTlsToServer:(NSString *)server port:(unsigned int)port;
 - (BOOL)helo;
@@ -58,5 +58,5 @@
 - (BOOL)validateRecipients:(id)recipients;
 - (BOOL)validateRecipientAddress:(NSString *)recAddress;
 - (BOOL)setData:(NSString *)data;
-- (mailsmtp *)resource;
+- (struct mailsmtp *)resource;
 @end
