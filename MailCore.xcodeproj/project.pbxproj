@@ -908,11 +908,6 @@
 				"DSTROOT[sdk=*]" = "/tmp/$(PROJECT_NAME).dst";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/libetpan/build-mac/build/Install Debug\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
@@ -935,18 +930,11 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/libetpan/build-mac/build/Install Debug\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/Frameworks;
 				OTHER_LDFLAGS = (
 					"-seg1addr",
 					0xb0000000,
@@ -963,14 +951,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = "libetpan/build/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = "libetpan/build-mac/build/$(CONFIGURATION)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"libetpan/build-mac/include/**",
 					"$(PROJECT_DIR)/libetpan/build-mac/build/$(CONFIGURATION)/include",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
@@ -980,14 +968,14 @@
 			buildSettings = {
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "libetpan/build/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = "libetpan/build-mac/build/$(CONFIGURATION)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				HEADER_SEARCH_PATHS = (
 					"libetpan/build-mac/include/**",
 					"$(PROJECT_DIR)/libetpan/build-mac/build/$(CONFIGURATION)/include",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Install;
 		};
@@ -996,14 +984,14 @@
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = "libetpan/build/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = "libetpan/build-mac/build/$(CONFIGURATION)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"libetpan/build-mac/include/**",
 					"$(PROJECT_DIR)/libetpan/build-mac/build/$(CONFIGURATION)/include",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = "Install Debug";
@@ -1014,15 +1002,9 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/libetpan/build-mac/build/Install Debug\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/Frameworks;
@@ -1217,7 +1199,7 @@
 				417B764A199CF17100082DD1 /* Install Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Install Debug";
+			defaultConfigurationName = Install;
 		};
 		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "MailCore" */ = {
 			isa = XCConfigurationList;
@@ -1227,7 +1209,7 @@
 				417B7649199CF17100082DD1 /* Install Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Install Debug";
+			defaultConfigurationName = Install;
 		};
 		F8618B5B10DADB8300C41188 /* Build configuration list for PBXNativeTarget "MailCore iOS" */ = {
 			isa = XCConfigurationList;
@@ -1237,7 +1219,7 @@
 				417B764B199CF17100082DD1 /* Install Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Install Debug";
+			defaultConfigurationName = Install;
 		};
 		F8DFCF5B15801A5000C01975 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
@@ -1247,7 +1229,7 @@
 				417B764C199CF17100082DD1 /* Install Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Install Debug";
+			defaultConfigurationName = Install;
 		};
 /* End XCConfigurationList section */
 	};
