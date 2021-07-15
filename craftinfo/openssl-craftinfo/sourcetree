@@ -1,0 +1,14 @@
+#
+# Add OpenSSL to non-Linux systems (i.e. macOS)
+#
+mulle-sourcetree -N add --nodetype '${OPENSSL_NODETYPE:-tar}' \
+                        --marks 'no-all-load,no-header,no-import,no-link,no-platform-linux' \
+                        --userinfo 'base64:YWxpYXNlcz1zc2wKaW5jbHVkZT1vcGVuc3NsL3NzbC5oCg==' \
+                        --url '${OPENSSL_URL:-https://github.com/openssl/openssl/archive/${MULLE_TAG}.tar.gz}' \
+                        --branch '${OPENSSL_BRANCH}' \
+                        --tag '${OPENSSL_TAG:-OpenSSL_1_1_1j}' \
+                        'openssl'
+mulle-sourcetree -N add --nodetype 'none' \
+                        --marks 'no-all-load,no-build,no-cmakeinherit,no-delete,no-dependency,no-fs,no-import,no-share,no-update,only-platform-linux' \
+                        --userinfo 'include=openssl/ssl.h' \
+                        'ssl'

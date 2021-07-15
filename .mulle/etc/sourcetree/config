@@ -1,0 +1,3 @@
+craftinfo/openssl-craftinfo;local;dependency,no-delete,no-header,no-link,no-share,no-subproject,no-update;40F9EBCC-7260-4595-816A-E884EFF7FA79;;;;;
+openssl;${OPENSSL_NODETYPE:-tar};no-all-load,no-header,no-import,no-link,no-platform-linux;4A096BC6-B968-41C5-B8BA-D98BAE77B7B6;${OPENSSL_URL:-https://github.com/openssl/openssl/archive/${MULLE_TAG}.tar.gz};${OPENSSL_BRANCH};${OPENSSL_TAG:-OpenSSL_1_1_1k};;base64:YWxpYXNlcz1zc2wKaW5jbHVkZT1vcGVuc3NsL3NzbC5oCg==
+ssl;none;no-all-load,no-build,no-cmakeinherit,no-delete,no-dependency,no-fs,no-import,no-share,no-update,only-platform-linux;F520D42D-5F36-4F82-8609-F58ADC602C34;;;;;include=openssl/ssl.h

@@ -1,4 +1,4 @@
-build
+[Bb]uild
 *~
 xcuserdata
 .DS_Store
@@ -7,3 +7,9 @@ include/
 TestData/account.plist
 Examples/OSX/MessageSender/MessageSender.xcodeproj/project.xcworkspace/xcshareddata/MessageSender.xccheckout
 MailCore.xcodeproj/project.xcworkspace/xcshareddata/MailCore.xccheckout
+
+kitchen/
+addiction/
+stash/
+dependency/
+var/
